@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    display: inline
+}
+img{
+    display: block;
+    margin: 0 auto;
+}
+.navbar{
+    text-align: center;
+    margin: 0 0 15%;
+}
+.inline{
+    display: inline;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 5%;
+}
+.searchBar{
+    text-align: center;
+    padding-bottom: 3%;
+}
+.searchButton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-left: 25%;
+}
