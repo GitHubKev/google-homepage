@@ -1,35 +1,127 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
-li{
-    display: inline
+/* position the navbar on the top of the page */
+#navbar{
+    top: 0;
 }
+/* get rid of the underline in links and change the color */
+#navbar a{
+    text-decoration: none;
+    color: #5F6368;
+}
+/* make the links inline rather than in a list and change the font-size & color */
+li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color:#5F6368;
+}
+/* position the left side of the navbar */
+.left-side-navbar{
+    float: left;
+}
+/* position the right side of the navbar */
+.right-side-navbar{
+    float: right;
+}
+/* add spacing between the navbar links */
+.left-side-navbar li, .right-side-navbar li{
+    padding: 0px 10px;
+}
+/* design the sign-in button */
+.sign-in-button{
+    font-weight: bold;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea)
+}
+
+/* making the google logo image center */
 img{
     display: block;
     margin: 0 auto;
+    padding-top: 15%;
+    padding-bottom: 30px;
 }
-.navbar{
-    text-align: center;
-    margin: 0 0 15%;
-}
-.inline{
-    display: inline;
-}
-.center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding: 5%;
-}
-.searchBar{
+
+/* make the search bar in the center */
+.search-bar{
     text-align: center;
     padding-bottom: 3%;
+    position: relative;
 }
-.searchButton{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding-left: 25%;
+
+/* adding the magnifying glass into the the search bar, add padding for space for icon */
+.google-search{
+    width: 35%;
+    border-radius: 25px;
+    padding: 12px 8px 12px 25px;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/1008656134/thumb/5.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 5%;
+    border: 0.5px solid;
+}
+
+/* remove the blue box when you click on the search bar*/
+.google-search:focus{
+    outline: 0;
+}
+/* make the search button center */
+#search-button{
+    text-align: center;
+}
+
+/* design the buttons */
+.search-button, .lucky-button{
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0;
+    margin: 5px;
+    color: #5F6368;
+}
+
+/* position footer at the bottom */
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 3rem;
+    background-color: #f2f2f2;
+}
+/* position the left side of footer */
+.left-side-footer{
+    float: left;
+}
+/* position the right side of footer */ 
+.right-side-footer{
+    float: right;
+}
+/* get rid of the underline and change the color of the links */
+footer a{
+    text-decoration: none;
+    color: #5F6368;
+}
+
+/* add spacing between the links */
+.left-side-footer li {
+    padding: 8px;
+}
+.right-side-footer li {
+    margin-right: 10px;
+    padding: 8px;
+}
+
+/* box shadow when you hover over */
+.google-search:hover, .search-button:hover, .lucky-button:hover{
+    box-shadow: 1px 1px;
+}
+
+/* links get underlined when you hover over*/
+footer a:hover, #navbar a:hover{
+    text-decoration: underline;
 }
